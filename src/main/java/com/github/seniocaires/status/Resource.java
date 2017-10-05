@@ -1,5 +1,6 @@
 package com.github.seniocaires.status;
 
+import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -12,9 +13,12 @@ import com.google.gson.Gson;
 @Produces(MediaType.APPLICATION_JSON + "; charset=UTF-8")
 public class Resource {
 
+  @Inject
+  private Service service;
+
   @GET
   @Path("/")
-  public Response amostra() {
-    return Response.ok(new Gson().toJson(Util.servicosMock())).build();
+  public Response status() {
+    return Response.ok(new Gson().toJson(service.buscarTodos())).build();
   }
 }
