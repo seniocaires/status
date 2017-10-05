@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,192 +9,10 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 <meta http-equiv="cleartype" content="on">
-<link rel="stylesheet" media="all"
-	href="http://dka575ofm4ao0.cloudfront.net/assets/status_manifest-8a8d3d7a664167b12507982a93458f3338976aed0c09b310bf4fcabcf212ae30.css" />
-<style>
-body.status, .color-primary, .color-primary:hover, .layout-content.status-index .status-day .update-title.impact-none a,
-	.layout-content.status-index .status-day .update-title.impact-none a:hover,
-	.layout-content.status-index .timeframes-container .timeframe.active,
-	.layout-content.status-full-history .month .incident-container .impact-none,
-	.layout-content.status.status-index .incidents-list .incident-title.impact-none a,
-	.incident-history .impact-none, .layout-content.status .grouped-items-selector.inline .grouped-item.active,
-	.layout-content.status.status-full-history .history-nav a.current,
-	.layout-content.status.status-full-history .history-nav a:not (.current
-	 ):hover {
-	color: #333333;
-}
-
-.layout-content.status.status-index .components-statuses .component-container .name
-	{
-	color: #333333;
-	color: rgba(51, 51, 51, .8);
-}
-
-small, .layout-content.status .table-row .date, .color-secondary,
-	.layout-content.status .grouped-items-selector.inline .grouped-item,
-	.layout-content.status.status-full-history .history-footer .pagination a.disabled,
-	.layout-content.status.status-full-history .history-nav a {
-	color: #AAAAAA;
-}
-
-body.status .layout-content.status .border-color, hr, .tooltip-base,
-	.markdown-display table {
-	border-color: #E0E0E0;
-}
-
-.markdown-display table td {
-	border-top-color: #E0E0E0;
-}
-
-.markdown-display table td+td, .markdown-display table th+th {
-	border-left-color: #E0E0E0;
-}
-
-.layout-content.status.status-index .status-day .update-title.impact-critical a,
-	.layout-content.status.status-index .status-day .update-title.impact-critical a:hover,
-	.layout-content.status.status-index .page-status.status-critical,
-	.layout-content.status.status-index .unresolved-incident.impact-critical .incident-title,
-	.flat-button.background-red {
-	background-color: #e74c3c;
-}
-
-.layout-content.status-index .components-statuses .component-container.status-red:after,
-	.layout-content.status-full-history .month .incident-container .impact-critical,
-	.layout-content.status-incident .incident-name.impact-critical,
-	.layout-content.status.status-index .incidents-list .incident-title.impact-critical a,
-	.status-red .icon-indicator, .incident-history .impact-critical,
-	.components-container .component-inner-container.status-red .component-status,
-	.components-container .component-inner-container.status-red .icon-indicator
-	{
-	color: #e74c3c;
-}
-
-.layout-content.status.status-index .unresolved-incident.impact-critical .updates
-	{
-	border-color: #e74c3c;
-}
-
-.layout-content.status.status-index .status-day .update-title.impact-major a,
-	.layout-content.status.status-index .status-day .update-title.impact-major a:hover,
-	.layout-content.status.status-index .page-status.status-major,
-	.layout-content.status.status-index .unresolved-incident.impact-major .incident-title
-	{
-	background-color: #e67e22;
-}
-
-.layout-content.status-index .components-statuses .component-container.status-orange:after,
-	.layout-content.status-full-history .month .incident-container .impact-major,
-	.layout-content.status-incident .incident-name.impact-major,
-	.layout-content.status.status-index .incidents-list .incident-title.impact-major a,
-	.status-orange .icon-indicator, .incident-history .impact-major,
-	.components-container .component-inner-container.status-orange .component-status,
-	.components-container .component-inner-container.status-orange .icon-indicator
-	{
-	color: #e67e22;
-}
-
-.layout-content.status.status-index .unresolved-incident.impact-major .updates
-	{
-	border-color: #e67e22;
-}
-
-.layout-content.status.status-index .status-day .update-title.impact-minor a,
-	.layout-content.status.status-index .status-day .update-title.impact-minor a:hover,
-	.layout-content.status.status-index .page-status.status-minor,
-	.layout-content.status.status-index .unresolved-incident.impact-minor .incident-title,
-	.layout-content.status.status-index .scheduled-incidents-container .tab
-	{
-	background-color: #f1c40f;
-}
-
-.layout-content.status-index .components-statuses .component-container.status-yellow:after,
-	.layout-content.status-full-history .month .incident-container .impact-minor,
-	.layout-content.status-incident .incident-name.impact-minor,
-	.layout-content.status.status-index .incidents-list .incident-title.impact-minor a,
-	.status-yellow .icon-indicator, .incident-history .impact-minor,
-	.components-container .component-inner-container.status-yellow .component-status,
-	.components-container .component-inner-container.status-yellow .icon-indicator,
-	.layout-content.status.manage-subscriptions .confirmation-infobox .fa {
-	color: #f1c40f;
-}
-
-.layout-content.status.status-index .unresolved-incident.impact-minor .updates,
-	.layout-content.status.status-index .scheduled-incidents-container {
-	border-color: #f1c40f;
-}
-
-.layout-content.status.status-index .status-day .update-title.impact-maintenance a,
-	.layout-content.status.status-index .status-day .update-title.impact-maintenance a:hover,
-	.layout-content.status.status-index .page-status.status-maintenance,
-	.layout-content.status.status-index .unresolved-incident.impact-maintenance .incident-title,
-	.layout-content.status.status-index .scheduled-incidents-container .tab
-	{
-	background-color: #3498DB;
-}
-
-.layout-content.status-index .components-statuses .component-container.status-blue:after,
-	.layout-content.status-full-history .month .incident-container .impact-maintenance,
-	.layout-content.status-incident .incident-name.impact-maintenance,
-	.layout-content.status.status-index .incidents-list .incident-title.impact-maintenance a,
-	.status-blue .icon-indicator, .incident-history .impact-maintenance,
-	.components-container .component-inner-container.status-blue .component-status,
-	.components-container .component-inner-container.status-blue .icon-indicator
-	{
-	color: #3498DB;
-}
-
-.layout-content.status.status-index .unresolved-incident.impact-maintenance .updates,
-	.layout-content.status.status-index .scheduled-incidents-container {
-	border-color: #3498DB;
-}
-
-.layout-content.status.status-index .page-status.status-none {
-	background-color: #2fcc66;
-}
-
-.layout-content.status-index .components-statuses .component-container.status-green:after,
-	.status-green .icon-indicator, .components-container .component-inner-container.status-green .component-status,
-	.components-container .component-inner-container.status-green .icon-indicator
-	{
-	color: #2fcc66;
-}
-
-a, a:hover, .layout-content.status-index .page-footer span a:hover,
-	.layout-content.status-index .timeframes-container .timeframe:not (.active
-	 ):hover, .layout-content.status-incident .subheader a:hover {
-	color: #3498db;
-}
-
-.flat-button, .masthead .updates-dropdown-container .show-updates-dropdown,
-	.layout-content.status-full-history .show-filter.open {
-	background-color: #3498db;
-}
-
-.components-section .components-uptime-link {
-	color: #aaaaaa;
-}
-
-.layout-content.status .shared-partial.uptime-90-days-wrapper .legend .legend-item
-	{
-	color: #aaaaaa;
-	opacity: 0.8;
-}
-
-.layout-content.status .shared-partial.uptime-90-days-wrapper .legend .legend-item.light
-	{
-	color: #aaaaaa;
-	opacity: 0.5;
-}
-
-.layout-content.status .shared-partial.uptime-90-days-wrapper .legend .spacer
-	{
-	background: #aaaaaa;
-	opacity: 0.3;
-}
-</style>
+<link rel="stylesheet" media="all" href="css/estilo.css" />
 <script>
 	function Get(yourUrl) {
-		var Httpreq = new XMLHttpRequest(); // a new request
+		var Httpreq = new XMLHttpRequest();
 		Httpreq.open("GET", yourUrl, false);
 		Httpreq.send(null);
 		return Httpreq.responseText;
@@ -212,37 +29,38 @@ a, a:hover, .layout-content.status-index .page-footer span a:hover,
 				<span class="status font-large"> Sistema ABC </span>
 			</div>
 
-			<div class="components-section font-regular" id="servicos">
-
-			</div>
+			<div class="components-section font-regular" id="servicos"></div>
 
 			<div class="page-footer border-color font-small">
-				<span class="color-secondary powered-by">1.0.0 <a
-					href="#" target="_blank" class="color-secondary"><img src="img/github.png"></a></span>
+				<span class="color-secondary powered-by">1.0.0 <a href="#"
+					target="_blank" class="color-secondary"><img
+						src="img/github.png"></a></span>
 			</div>
 		</div>
 
 	</div>
-<script>
-setInterval(
-		function(){
-//var statusGeral = "<div class='page-status status-none'><span class='status font-large'> All Systems Operational </span> <span class='last-updated-stamp  font-small'></span></div>;"
-//var rodape = "<div class='page-footer border-color font-small'><span class='color-secondary powered-by'>Powered by <a href='#' target='_blank' class='color-secondary'>Eu mesmo</a></span></div>";
-var statusServicos = "";
-var servicos = JSON.parse(Get('v1/status'));
-for (var i = 0; i < servicos.length; i++) {
-	var statusColor = "";
-	if (servicos[i].status === 'ONLINE') {
-		var statusColor = 'status-green';
-	} else if (servicos[i].status === 'OFFLINE') {
-		var statusColor = 'status-red';
-	} else {
-		var statusColor = 'status-yellow';
-	}
-	statusServicos += "<div class='components-container one-column'><div class='component-container border-color'><div class='component-inner-container " + statusColor + " '><span class='name'> " + servicos[i].nome + " &nbsp; </span> <span class='component-status'> " + servicos[i].status + " </span> <span class='tool icon-indicator fa fa-check'></span></div></div></div>";
-}
-document.getElementById('servicos').innerHTML = statusServicos;
-		}, 3000);
-</script>
+	<script>
+		setInterval(
+				function() {
+					var statusServicos = "";
+					var servicos = JSON.parse(Get('v1/status'));
+					for (var i = 0; i < servicos.length; i++) {
+						var statusColor = "";
+						if (servicos[i].status === 'ONLINE') {
+							var statusColor = 'status-green';
+						} else if (servicos[i].status === 'OFFLINE') {
+							var statusColor = 'status-red';
+						} else {
+							var statusColor = 'status-yellow';
+						}
+						statusServicos += "<div class='components-container one-column'><div class='component-container border-color'><div class='component-inner-container " + statusColor + " '><span class='name'> "
+								+ servicos[i].nome
+								+ " &nbsp; </span> <span class='component-status'> "
+								+ servicos[i].status
+								+ " </span> <span class='tool icon-indicator fa fa-check'></span></div></div></div>";
+					}
+					document.getElementById('servicos').innerHTML = statusServicos;
+				}, 3000);
+	</script>
 </body>
 </html>
